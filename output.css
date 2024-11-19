@@ -1731,7 +1731,7 @@ video {
   }
 }
 
-@media (max-width: 410px ), (max-height: 857px) {
+@media (max-width: 410px ), (max-height: 920px) {
   .titre{
     display: flex;
     justify-content: center;
@@ -1760,7 +1760,7 @@ video {
     max-width: 800px;
     height: 90px;
     position: absolute; /* Pour centrer absolument */
-    top: 15%; /* Centre verticalement */
+    top: 14%; /* Centre verticalement */
     left: 50%; /* Centre horizontalement */
     transform: translate(-50%, -50%); /* Correction du décalage */
     background-color: black; /* Pour la visibilité */
