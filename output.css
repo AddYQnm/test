@@ -1595,7 +1595,7 @@ video {
     max-width: 800px;
     height: 90px;
     position: absolute; /* Pour centrer absolument */
-    top: 15%; /* Centre verticalement */
+    top: 12%; /* Centre verticalement */
     left: 50%; /* Centre horizontalement */
     transform: translate(-50%, -50%); /* Correction du décalage */
     background-color: black; /* Pour la visibilité */
@@ -1607,4 +1607,162 @@ video {
 
 .mt-10T{
   margin-top: -200px;
+}
+
+@media (max-width: 1024px),  (max-height: 857px)  {
+  .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 4%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 10%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+    background-color: black; /* Pour la visibilité */
+  }
+  .bouttonrose{
+    display: none;
+  }
+}
+
+.mt-10T{
+  margin-top: -200px;
+}
+
+@media (max-width: 830px) {
+  .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 4%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 11%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+    background-color: black; /* Pour la visibilité */
+  }
+  .bouttonrose{
+    display: none;
+  }
+}
+
+.mt-10T{
+  margin-top: -200px;
+}
+
+@media (max-width: 420px ), (max-height: 857px) {
+  .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 4%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 11%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+    background-color: black; /* Pour la visibilité */
+  }
+}
+
+@media (max-width: 410px ), (max-height: 857px) {
+  .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 4%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 30px;
+    margin: 0 auto; /* Centre horizontalement */
+    width: 80%;
+    background: none;
+    max-width: 800px;
+    height: 90px;
+    position: absolute; /* Pour centrer absolument */
+    top: 15%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Correction du décalage */
+    background-color: black; /* Pour la visibilité */
+  }
 }
