@@ -1595,7 +1595,7 @@ video {
     max-width: 800px;
     height: 90px;
     position: absolute; /* Pour centrer absolument */
-    top: 12%; /* Centre verticalement */
+    top: 15%; /* Centre verticalement */
     left: 50%; /* Centre horizontalement */
     transform: translate(-50%, -50%); /* Correction du décalage */
     background-color: black; /* Pour la visibilité */
