@@ -1,0 +1,156 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #0d0c28;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #ff004c;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo .highlight {
+  color: #ff004c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #ff004c;
+}
+
+.contact-btn {
+  background: #ff004c;
+}
+
+.contact-btn:hover {
+  background: #333;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-card {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  width: 90%;
+  max-width: 1106px;
+  height: 90%;
+  max-height: 700px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: solid 2px rgba(207, 43, 91, 1);
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 10px auto; /* centre horizontalement */
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;
+  margin-left: 30px;
+  margin: 10px 0; /* ajustement pour supprimer le auto qui n'est pas nécessaire ici */
+  padding: 10px; /* ajoute un peu de padding pour un rendu plus agréable */
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  flex: 1;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  
+}
+
+.submit-btn {
+  background: #ff004c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 40px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+
+.submit-btn span {
+  font-weight: bold;
+}
+
+/* Footer */

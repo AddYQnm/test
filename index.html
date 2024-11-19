@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prolab Afrik</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="output.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-[Montserrat] h-screen">
+
+  
+    <!-- Barre supérieure avec des éléments à gauche et à droite -->
+    <header id="acceuil" class="header w-full flex items-center justify-between px-8 p-4">
+      <div class="titre">
+          <div class="flex flex-col -mt-40">
+              <!-- -mt-4 remonte la div -->
+              <h1 class="text-4xl font-bold text-gray-800">
+                  <span class="text-rose-60">P</span>rolab <span class="text-rose-60">A</span>frik
+              </h1>
+              <p class="TextIII text-lg font-semibold mt-4 text-gray-700 leading-relaxed">
+                  Des Logiciels sur<br> mesures pour<br> l’Afrique
+              </p>
+              <a href="contact.html" class="group lg:text-lg md:text-lg text-black transition duration-300">
+                Découvrir →
+                <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+              <div class="Logo mt-8 flex flex-col mt-40-important">
+                <a href="https://facebook.com" target="_blank" class="bg-secondaire text-white text-xl mt-4 p-3 rounded-full flex items-center justify-center" aria-label="Facebook" style="width: 40px; height: 40px;">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="bg-secondaire text-white text-xl mt-4 p-3 rounded-full flex items-center justify-center" aria-label="Twitter" style="width: 40px; height: 40px;">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="bg-secondaire text-white text-xl mt-4 p-3 rounded-full flex items-center justify-center" aria-label="LinkedIn" style="width: 40px; height: 40px;">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Élément à droite (navcard centré) -->
+      <div class="navcard mx-auto text-center" style="background-image: url(assets/AfriqueNav.png); background-size: cover;">
+  
+          <!-- Ajout de la barre de navigation -->
+<!-- Navigation -->
+<nav class="Navbar fixed top-0 left-0 w-full bg-transparent p-4 z-50">
+  <!-- Icône hamburger pour les petits écrans -->
+  <div class="block xl:hidden">
+      <button id="menu-toggle" class="burger text-white focus:outline-none">
+          <!-- Icône hamburger -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+      </button>
+  </div>
+
+  <!-- Menu de navigation -->
+  <ul id="menu" class="hidden flex-col items-center text-white font-semibold w-full space-y-4 bg-black bg-opacity-80 p-6 rounded-lg xl:flex xl:flex-row xl:space-x-4 xl:space-y-0 xl:bg-transparent xl:p-0">
+      <li>
+          <a href="#" class="block px-4 py-2 rounded-full bg-primary hover:bg-black transition duration-200">Accueil</a>
+      </li>
+      <li>
+          <a href="digitalisation.html" class="block px-4 py-2 rounded-full bg-slate-500 hover:bg-primary transition duration-200">Digitalisation des services</a>
+      </li>
+      <li>
+          <a href="demarche.html" class="block px-4 py-2 rounded-full bg-slate-500 hover:bg-primary transition duration-200">Notre démarche</a>
+      </li>
+  </ul>
+</nav>
+
+<!-- Script JavaScript pour afficher/cacher le menu déroulant -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  // Afficher ou cacher le menu lorsque le bouton hamburger est cliqué
+  menuToggle.addEventListener('click', function(event) {
+    menu.classList.toggle('hidden'); // Affiche ou cache le menu
+
+    // Empêcher la propagation de l'événement pour éviter que le clic sur le hamburger ne soit pris en compte comme un clic extérieur
+    event.stopPropagation();
+  });
+
+  // Cacher le menu si un clic est effectué à l'extérieur
+  document.addEventListener('click', function(event) {
+    // Si l'élément cliqué n'est ni le menu ni le bouton hamburger
+    if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+      menu.classList.add('hidden'); // Cacher le menu
+    }
+  });
+</script>
+
+        </nav>
+        
+  
+          <!-- Ajout du texte au centre -->
+          <div class="titre1">
+              <h2 class="h2 text-6xl">Transformez <br> vos Idées En <br> Logiciels</h2>
+              <p class="P text-2xl font-light mt-7">ProLabAfrik vous accompagne dans la <br> création de solutions logicielles sur <br> mesure.</p>
+          </div>
+  
+          <!-- Boutons existants -->
+          <div class="boutton flex items-center justify-center h-screen">
+              <a href="" class="contact absolute top-0 text-white text-sm w-44 bg-secondary p-3 rounded-full group-hover:animate-pulse items-center justify-center flex flex-row">
+                Nous contacter →
+              </a>
+
+          </div>
+          <div class="boutton2 flex items-center justify-center h-screen">
+              <a href="" class="text-white text-sm w-44 bg-primary p-3 rounded-full group-hover:animate-pulse items-center justify-center flex flex-row absolute bottom-0">
+                Discutons  →
+              </a>
+          </div>
+          
+      </div>
+  </header>
+  
+
+
+
+  <section class="flex flex-col gap-10 items-center relative reveal-element mt-40-important">
+     
+    <div class="w-fit flex flex-col gap-2 m-auto">
+        <p class="text-4xl md:text-5xl lg:text-5xl text-black uppercase font-black">Nos Services</p>
+        <!-- separator -->
+        <div class="w-1/2 h-4 bg-primary rounded-full"></div>
+    </div>
+    <p class="text-black text-lg text-center font-semibold">Chez PROLAB l’innovation et l’expertise se rencontrent pour propulser votre entreprise<br> et votre carrière vers de nouveaux sommets. 
+      Nous vous offrons une <br>gamme de services pour répondre vos besoins technologiques.</p>
+
+
+
+
+
+    
+</section>
+
+
+ <section class="Mobile ">
+        <div class="flex flex-col justify-center items-center mobile-only">
+        <div class="container">
+            <div class="upper" style="background-image: url(assets/1.png); background-size: cover;">
+    
+            </div>
+            <div class="lower">
+              <h2 class="md:flex justify-center items-center align-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-white mt-5">
+                SOLUTIONS LOGICIELLES<br>INNOVANTES
+              </h2>
+              
+              <p class="md:flex justify-center items-center align-center font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4 text-white leading-relaxed">
+                Chez PROLABAFRIK, nous développons des solutions logicielles personnalisées qui répondent aux défis uniques de votre secteur. Découvrez comment nos technologies avancées peuvent transformer votre entreprise.
+              </p>
+              
+              <p class="md:flex justify-center items-center align-center font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-5 text-white leading-relaxed">
+                <button class="md:flex justify-center items-center hover:bg-blue-700 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white w-fit bg-primary p-3 rounded-full">
+                  Discutons →
+                </button>
+              </p>
+              
+                <div class="price2 flex justify-center"> 
+                  <div class="price3 flex justify-center"></div>
+                  
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="upper" style="background-image: url(assets/2.png); background-size: cover;">
+    
+            </div>
+            <div class="lower">
+              <h2 class="md:flex justify-center items-center align-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-white mt-5">
+                RÉVOLUTION DE L’IA
+              </h2>
+              
+              <p class="md:flex justify-center items-center align-center font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4 text-white leading-relaxed">
+                Avec PROLABAFRIK, exploitez vos données pour analyser, prévoir et décider en temps réel. Optimisez vos processus, boostez vos performances et préparez votre entreprise aux défis de demain.
+
+              </p>
+              
+              <p class="md:flex justify-center items-center align-center font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-5 text-white leading-relaxed">
+                <a href="contact.html" class="md:flex justify-center items-center hover:bg-blue-700 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white w-fit bg-primary p-3 rounded-full">
+                  Discutons →
+                </a>
+              </p>
+              
+                <div class="price2 flex justify-center"> 
+                  <div class="price3 flex justify-center"></div>
+                  
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="upper" style="background-image: url(assets/3.png); background-size: cover;">
+    
+            </div>
+            <div class="lower">
+              <h2 class="md:flex justify-center items-center align-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-white mt-5">
+                DIGITALISATION DE VOS SERVICES
+              </h2>
+              
+              <p class="md:flex justify-center items-center align-center font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4 text-white leading-relaxed">
+                Notre équipe, digitalise vos processus pour optimiser vos opérations et accélérer votre croissance. Transformez votre entreprise grâce au solutions numériques innovantes de PROLABAFRIK.
+              </p>
+              
+              <p class="md:flex justify-center items-center align-center font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-5 text-white leading-relaxed">
+                <a href="contact.html" class="md:flex justify-center items-center hover:bg-blue-700 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white w-fit bg-primary p-3 rounded-full">
+                  Discutons →
+                </a>
+              </p>
+              
+                <div class="price2 flex justify-center"> 
+                  <div class="price3 flex justify-center"></div>
+                  
+                </div>
+                
+            </div>
+        </div>
+
+
+     
+
+
+     
+    </section>
+
+<section class="flex flex-col justify-center items-center">
+  <div class="card" >
+
+    
+    <div class="imgBx" style="background-image: url(assets/1.png);">
+      <h2 class="md:flex justify-center items-center text-2xl font-bold text-white mb-2">Image Box Title</h2>
+  <!--    <p class="md:flex justify-center items-center text-base text-white leading-relaxed">
+        Chez PROLAB, nous développons des solutions<br>
+         logicielles personnalisées qui répondent aux défis<br>
+          uniques de votre secteur. Découvrez comment<br>
+           nos technologies avancées peuvent transformer<br>
+            votre entreprise.
+      </p> -->
+
+      <span class="price"></span>
+      <span class="price2"></span>
+      <span class="price3"></span>
+    </div>
+    
+    
+    <div class="content">
+      <h2 class="md:flex justify-center items-center align-center text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl font-bold text-white mt-5 mb-2">
+        SOLUTIONS LOGICIELLES<br>INNOVANTES
+      </h2>
+    
+      <p class="md:flex justify-center items-center align-center  text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-7 ml-24 mr-24 text-white leading-relaxed font-extralight">
+        Chez PROLABAFRIK, nous développons des solutions 
+        logiciellespersonnalisées qui répondent
+         aux défis uniques de votre secteur.
+          Découvrez comment nos technologies 
+          avancées peuvent transformer 
+          votre entreprise.
+      </p>
+    
+      <p class="md:flex justify-center items-center align-center font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-5 text-white leading-relaxed">
+        <a href="contact.html" class="mt-0 bg-primary text-white p-2 sm:p-3 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-fit hover:bg-secondary">
+          Discutons →
+        </a>
+      </p> 
+      <span class="price"></span>
+      <span class="price3"></span>
+      <span class="price4"></span>
+    </div>
+  </div>
+
+
+  <div class="card2" >
+    <div class="imgBx" style="background-image: url(assets/2.png);">
+
+      <span class="price"></span>
+      <span class="price2"></span>
+      <span class="price3"></span>
+    </div>
+    
+    
+    <div class="content">
+      <h2 class="md:flex justify-center items-center align-center text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl font-bold text-white mt-5 mb-2">
+        RÉVOLUTION DE L’IA
+      </h2>
+    
+      <p class="md:flex justify-center items-center align-center  text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-10 ml-20 mr-20 text-white leading-relaxed font-extralight">
+        Avec PROLABAFRIK, exploitez vos données pour analyser, prévoir et décider en temps réel. Optimisez vos processus, boostez vos performances et préparez votre entreprise aux défis de demain.
+      </p>
+    
+      <p class="md:flex justify-center items-center align-center font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-5 text-white leading-relaxed">
+        <a href="contact.html" class="mt-0 bg-primary text-white p-2 sm:p-3 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-fit hover:bg-secondary">
+          Discutons →
+        </a>
+      </p> 
+        
+      <span class="price"></span>
+      <span class="price3"></span>
+      <span class="price4"></span>
+    </div>
+  </div>
+
+  <div class="card" >
+    <div class="imgBx" style="background-image: url(assets/3.png);">
+
+
+      <span class="price"></span>
+      <span class="price2"></span>
+      <span class="price3"></span>
+    </div>
+    
+    
+    <div class="content">
+      <h2 class="md:flex justify-center items-center align-center text-lg sm:text-xl md:text-1xl lg:text-2xl xl:text-3xl font-bold text-white mt-5 mb-2">
+        DIGITALISATION DE VOS SERVICES
+      </h2>
+    
+      <p class="md:flex justify-center items-center align-center  text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-10 ml-20 mr-20 text-white leading-relaxed font-extralight">
+        Notre équipe, digitalise vos processus pour optimiser vos opérations et accélérer votre croissance. Transformez votre entreprise grâce au solutions numériques innovantes de PROLABAFRIK.
+      </p>
+    
+      <p class="md:flex justify-center items-center align-center font-normal text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-5 text-white leading-relaxed">
+        <a href="contact.html" class="mt-0 bg-primary text-white p-2 sm:p-3 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-fit hover:bg-secondary">
+          Discutons →
+        </a>
+      </p> 
+      <span class="price"></span>
+      <span class="price3"></span>
+      <span class="price4"></span>
+    </div>
+  </div>
+
+</section>
+
+<section class="flex flex-col items-center relative reveal-element mt-40-important mb-10">
+     
+    <div class="w-fit flex flex-col gap-2 m-auto">
+        <p class="text-4xl md:text-5xl lg:text-5xl text-black uppercase font-black">Démarrez Votre Projet </p>
+        <!-- separator -->
+        <div class="w-1/2 h-4 bg-primary rounded-full"></div>
+    </div>
+  
+  </section>
+  
+
+  <section class="Mobile1">
+
+    <div class="md:flex flex-col justify-center align-center items-center gap-10">
+
+      <div class="imgText" style="background-image: url(assets/imgBox.png); background-size: cover;">
+
+      </div>
+      <div class="card1 flex flex-col items-center justify-start text-center p-5">
+        <!-- Titre avec texte plus grand et espacé en haut -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mt-2 mb-4">
+          Bénéficiez d'un support
+        </h2>
+        
+        <!-- Paragraphe avec texte plus grand et ajusté -->
+        <p class="font-normal text-xl sm:text-lg md:text-xl lg:text-1xl text-white leading-relaxed mb-6">
+          Profitez d'un accompagnement sur mesure et d'un soutien 
+          inégalé pour concrétiser 
+          vos projets. Notre équipe 
+          dévouée est là pour 
+          vous guider à chaque 
+          étape de votre parcours 
+          vers le succès.
+        </p>
+        
+        <!-- Image centrée en bas -->
+        <div class="flex-grow"></div> <!-- Cela pousse l'image vers le bas -->
+        <img src="assets/handshake 1.png" alt="Support image" class="w-20 h-20 mx-auto mt-0" /> <!-- Ajustez la taille de l'image selon vos besoins -->
+      </div>
+      
+
+
+      <div class="card1 flex flex-col items-center justify-start text-center p-5">
+        <!-- Titre avec texte plus grand et espacé en haut -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mt-2 mb-4">
+          Découvrez les opportunités
+        </h2>
+        
+        <!-- Paragraphe avec texte plus grand et ajusté -->
+       <p class="font-normal text-xl sm:text-lg md:text-xl lg:text-1xl text-white leading-relaxed mb-6">
+        Explorez les opportunités numériques en plein essor sur le continent
+        africain et préparez-vous 
+        à saisir les occasions de 
+        marchés qui se 
+        présentent 
+        à vous.
+        </p>
+        
+        <!-- Image centrée en bas -->
+        <div class="flex-grow"></div> <!-- Cela pousse l'image vers le bas -->
+        <img src="assets/lamp 1.png" alt="Support image" class="w-16 h-20 mx-auto mt-0" /> <!-- Ajustez la taille de l'image selon vos besoins -->
+      </div>
+      
+
+
+      <div class="card1 flex flex-col items-center justify-start text-center p-5">
+        <!-- Titre avec texte plus grand et espacé en haut -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mt-2 mb-4">
+          Collaborez et innovez
+        </h2>
+        
+        <!-- Paragraphe avec texte plus grand et ajusté -->
+       <p class="font-normal text-xl sm:text-lg md:text-xl lg:text-1xl text-white leading-relaxed mb-6">
+        Rejoignez notre communauté dynamique pour collaborer et innover ensemble. Explorons de nouvelles voies, repoussons les limites et transformons des idées en réalité.
+        </p>
+        
+        <!-- Image centrée en bas -->
+        <div class="flex-grow"></div> <!-- Cela pousse l'image vers le bas -->
+        <img src="assets/people 1.png" alt="Support image" class="w-20 h-20 mx-auto mt-0" /> <!-- Ajustez la taille de l'image selon vos besoins -->
+      </div>
+      
+
+
+      <div class="card1 flex flex-col items-center justify-start text-center p-5">
+        <!-- Titre avec texte plus grand et espacé en haut -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mt-2 mb-4">
+          Lancez votre projet
+        </h2>
+        
+        <!-- Paragraphe avec texte plus grand et ajusté -->
+       <p class="font-normal text-xl sm:text-lg md:text-xl lg:text-1xl text-white leading-relaxed mb-6">
+        Plongez dans l'aventure entrepreneuriale et donnez vie à vos projets les plus ambitieux. Notre équipe expérimentée est là pour vous guider à chaque étape de votre parcours entrepreneurial. Rejoignez-nous dès aujourd'hui et lancez-vous vers le succès.
+        </p>
+        
+        <!-- Image centrée en bas -->
+        <div class="flex-grow"></div> <!-- Cela pousse l'image vers le bas -->
+        <img src="assets/rocket 1.png" alt="Support image" class="w-20 h-20 mx-auto mt-0" /> <!-- Ajustez la taille de l'image selon vos besoins -->
+      </div>
+      
+
+
+</div>
+  </section>
+  
+  <section class="BoxX desktop-only ">
+    <div class="h-screen flex items-center justify-center">
+
+    
+    <div class="Box relative mt-40-important">
+      
+      <!-- Image principale au centre -->
+      <img src="assets/Rectangle 16.png" alt="Sunset view from a balcony" class="max-w-full h-auto">
+      <div style="background-image: url(assets/Vector\ 2.png); background-size: cover;"></div>
+      
+      <!-- Images dans les coins avec animations AOS -->
+      <!-- Coin supérieur gauche -->
+      <div class="box1" style="background-image: url('assets/Rectangle.png');" data-aos="fade-right" data-aos-duration="1000">
+        <div class="Textcard md:flex flex-col  h-screen ml-5 mt-5 font-bold text-white">
+          <h1 class="text-3xl">Bénéficiez d'un support</h1>
+          <p class="Phrase ">Profitez d'un accompagnement sur<br>
+              mesure et d'un soutien inégalé <br>pour concrétiser 
+            vos projets.<br> Notre équipe 
+            dévouée est là <br>pour 
+            vous guider à chaque <br>
+            étape de votre parcours <br>
+            vers le succès.</p>
+        </div>
+      </div>
+      
+      <!-- Coin supérieur droit -->
+      <div class="box2" style="background-image: url('assets/Frame 5043.png');" data-aos="fade-left" data-aos-duration="1000">
+        <div class="Textcard md:flex flex-col  h-screen ml-5 mt-5 font-bold text-white">
+          <h1 class="text-3xl">Bénéficiez d'un support</h1>
+          <p class="Phrase2">
+            Explorez les opportunités numériques en plein essor sur le continent
+            africain et préparez-vous 
+            à saisir les occasions de 
+            marchés qui se 
+            présentent 
+            à vous.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Coin inférieur gauche -->
+      <div class="box3" style="background-image: url('assets/Frame 5045.png');" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="Textcard md:flex flex-col  h-screen ml-5 mt-5 font-bold text-white">
+          <h1 class="text-2xl align-center">Bénéficiez d'un support</h1>
+          <p class="Phrase3">
+            Rejoignez notre communauté 
+            dynamique pour collaborer 
+            et innover ensemble. Explorons
+             de nouvelles voies, repoussons
+              les limites et transformons des 
+              idées en réalité.
+
+          </p>
+        </div>
+      </div>
+      
+      <!-- Coin inférieur droit -->
+      <div class="box4" style="background-image: url('assets/Frame 5047.png');" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="Textcard md:flex flex-col  h-screen ml-5 mt-7 font-bold text-white">
+          <h1 class="text-2xl align-justify">Lancez votre<br> projet</h1>
+          <p class="Phrase4">
+            Rejoignez notre communauté<BR> 
+            dynamique pour collaborer <BR> 
+            et innover ensemble. Explorons<BR> 
+             de nouvelles voies, repoussons<BR> 
+              les limites et transformons des<BR>  
+              idées en réalité.
+
+          </p>
+        </div>
+      
+      </div>
+  </div>
+  
+</div>
+
+  <!-- Ajouter AOS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+      // Initialiser AOS
+      AOS.init();
+  </script>
+
+  </section>
+  <div class="flex items-center justify-center">
+    <a href="contact.html" class="text-white text-lg w-fit bg-secondary p-3 rounded-full hover:animate-pulse mt-200">Demandez un Devis  →</a>
+   </div>
+
+
+ 
+    <footer  id="footer"  class="Footer bottom-0 flex gap-7 flex-col w-full  relative bg-footer mt-10" >
+      <div class="absolute right-1/2 rounded-full w-10 h-10 flex items-center justify-center bg-secondary animate-bounce hover:cursor-pointer" onclick="scrollToElement('home-section')"><span class="text-center text-white font-light text-3xl">&#8593</span></div>
+      <div class="w-full h-0.5 bg-white"></div>
+    
+          <div
+              class="flex justify-start ml-5">
+              <img src="./assets/logo (2).png" alt="logo">
+            
+          </div>
+    
+      <div class="flex justify-evenly flex-wrap gap-2">
+          <div class="flex flex-col gap-1">
+              <p class="text-white text-lg font-medium uppercase underline">NOS AGENCES</p>
+              <p class="text-white text-lg font-normal">DevOp360</p>
+              <p class="text-white text-lg font-normal">ProlabAfrik-Benin</p>
+          </div>
+    
+          <div class="flex flex-col gap-1">
+              <p class="text-white text-lg font-medium uppercase underline">Contact</p>
+              <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+              <p class="text-white text-lg font-normal">+33 6 81 68 09 13</p>
+              <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+          </div>
+          <div class="flex flex-col gap-3 text-white">
+            <p class="text-white text-lg font-medium uppercase underline">Réseaux sociaux</p>
+            <div class="flex flex-row gap-3">
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube" style="color: white; font-size: 24px;"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter" style="color: white; font-size: 24px;"></i>
+                </a>
+                <a href="#" aria-label="TikTok">
+                    <i class="fab fa-tiktok" style="color: white; font-size: 24px;"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook" style="color: white; font-size: 24px;"></i>
+                </a>
+        </div>
+          </div>
+      </div>  
+      <p class="text-white text-lg font-bold text-center">© 2024 ProLabAfrik</p>
+    </footer>
+
+
+</body>
+</html>

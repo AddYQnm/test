@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/smart.css">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Prolab Afrik</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="w-full flex items-center justify-between px-8 p-4">
+        
+        <div class="titreT">
+            <div class="flex flex-col -mt-40">
+                <!-- -mt-4 remonte la div -->
+                <h1 class="text-4xl font-bold text-gray-800">
+                    <span class="text-rose-60">P</span>rolab <span class="text-rose-60">A</span>frik
+                </h1>
+                
+                <p class="para text-lg font-semibold mt-4 text-gray-700 leading-relaxed">
+                    Des Logiciels sur<br> mesures pour<br> l’Afrique
+                </p>
+                <a href="contact.html" class="group lg:text-lg md:text-lg text-black transition duration-300">
+                    Découvrir →
+                    <span class="block w-0 group-hover:w-1/2 transition-all duration-500 h-0.5 bg-primary"></span>
+                <div class="logo mt-8 flex flex-col mt-40-important">
+                  <a href="https://facebook.com" target="_blank" class="bg-secondaire text-white text-xl mt-4 p-3 rounded-full flex items-center justify-center" aria-label="Facebook" style="width: 40px; height: 40px;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="bg-secondaire text-white text-xl mt-4 p-3 rounded-full flex items-center justify-center" aria-label="Twitter" style="width: 40px; height: 40px;">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="bg-secondaire text-white text-xl mt-4 p-3 rounded-full flex items-center justify-center" aria-label="LinkedIn" style="width: 40px; height: 40px;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Élément à droite (navcardBox centré) -->
+        <div class="navbar" style="background-image: url('assets/AfriqueNav.png');">
+            <div class="nav-items">
+                <a href="index.html" class="nav-item">Accueil</a>
+                <a href="digitalisation.html" class="nav-item active">Digitalisation des services</a>
+                <a href="demarche.html" class="nav-item ">Notre démarche</a>
+            </div>
+            
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+        </div>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu gap-4" id="dropdownMenu">
+            <a href="index.html" class="nav-item">Accueil</a>
+            <a href="digitalisation.html" class="nav-item active">Digitalisation des services</a>
+            <a href="demarche.html" class="nav-item ">Notre démarche</a>
+        </div>
+      
+        <script>
+            function toggleMenu() {
+                const dropdownMenu = document.getElementById('dropdownMenu');
+                dropdownMenu.classList.toggle('show'); // Toggle visibility on click
+            }
+                    // Close the dropdown menu if clicked outside of it
+        document.addEventListener('click', function(event) {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            const hamburger = document.querySelector('.hamburger');
+            const navbar = document.querySelector('.navbar');
+
+            // If the click is outside the dropdown or hamburger menu
+            if (!navbar.contains(event.target)) {
+                dropdownMenu.classList.remove('show'); // Hide the menu
+            }
+
+            // If the click is outside the hamburger menu but inside the navbar
+            if (!hamburger.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('show'); // Hide the menu
+            }
+        });
+        </script>
+    
+            <!-- Ajout du texte au centre -->
+           
+    </header>
+    <a href="contact.html" class="bouttonrose text-white text-lg w-fit p-3 rounded-full hover:animate-pulse mt-40-important">Nous contacter  →</a>
+    <section class="Smart flex flex-col gap-10 items-center relative reveal-element ">
+     
+        <div class="w-fit flex flex-col gap-2 m-auto">
+            <p class="text-4xl md:text-5xl lg:text-5xl text-black uppercase font-bold">Smart Adaptation 
+               <br> & PROLABAFRIK
+                
+                
+                 </p>
+            <!-- separator -->
+            <div class="w-1/2 h-4 bg-primary rounded-full"></div>
+        </div>
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-black text-center font-semibold leading-relaxed px-4 sm:px-6 lg:px-12">
+            Chez PROLAB, l’innovation et l’expertise se rencontrent pour propulser votre entreprise<br class="hidden sm:inline"> 
+            et votre carrière vers de nouveaux sommets. Nous vous offrons une<br class="hidden md:inline">
+            gamme de services pour répondre à vos besoins technologiques.
+          </p>
+    
+    
+    
+ 
+    
+        
+    </section>
+    <!-- style="background-image: url(Vector\ \(1\).png);" class="bg-cover bg-center bg-no-repeat optimized-bg" -->
+
+    <section class="flex flex-col justify-center items-center" style="background-image: url(Vector\ \(1\).png); background-size: cover;">
+
+        <div class="cardBox flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">ÉCOUTE ET ANALYSE PRÉDICTIVE</h2>
+            <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed px-4 sm:px-8 md:px-12">
+                
+                Nous commençons chaque projet par une phase d'écoute active où des outils d'analyse prédictive sont utilisés pour comprendre non seulement les besoins actuels des clients mais aussi pour anticiper leurs futurs besoins. Nous utilisons des techniques de data mining et de machine learning pour analyser les données de l'entreprise et prédire les tendances et les évolutions possibles dans leur secteur.
+
+            </p>
+        </div>
+        
+        <div class="cardBox flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">CONCEPTION MODULAIRE ÉVOLUTIVE</h2>
+             <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed px-4 sm:px-8 md:px-12">
+                
+                Nous développons des logiciels avec une architecture modulaire qui permet aux clients de choisir et de personnaliser les fonctionnalités selon leurs besoins spécifiques. Cette approche garantit une grande flexibilité et facilite l'intégration de nouvelles fonctionnalités ou la mise à l'échelle à mesure que les exigences du client évoluent.
+
+        </div>
+
+        <div class="cardBox flex flex-col items-center justify-center text-center ">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">INTÉGRATION DE L'IA POUR L'AUTOMATISATION AVANCÉE</h2>
+             <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed px-4 sm:px-8 md:px-12">
+                
+                Nous intégrons des fonctionnalités d'intelligence artificielle qui permettent au logiciel de s'adapter automatiquement aux changements d'environnement et d'optimiser continuellement ses performances sans intervention humaine. Par exemple, des systèmes qui apprennent des interactions des utilisateurs pour simplifier les processus et anticiper les actions futures.
+            </p>
+        </div>
+
+        <div class="cardBox flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">DÉPLOIEMENT AGILE ET ACCOMPAGNEMENT CONTINU</h2>
+             <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed px-4 sm:px-8 md:px-12">
+                
+                Nous utilisons une méthodologie Agile pour le déploiement des solutions, permettant des itérations rapides et une adaptation constante aux retours du client. Offrir un accompagnement continu avec des sessions régulières de feedback et des mises à jour logicielles qui intègrent les dernières innovations technologiques.
+
+            </p>
+        </div>
+
+        <div class="cardBox flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">SÉCURITÉ PROACTIVE ET CONFORMITÉ</h2>
+             <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed px-4 sm:px-8 md:px-12">
+                
+                Nous intégrons une couche de sécurité robuste dans tous les logiciels, utilisant les dernières technologies pour garantir la protection des données. Assurer la conformité avec les réglementations internationales pertinentes pour protéger non seulement les données mais aussi l'opérabilité du client dans diverses juridictions.
+            </p>
+        </div>
+
+        <a href="contact.html" class="text-white text-lg w-fit bg-button p-3 rounded-full hover:animate-pulse mt-40-important">Demandez un Devis  →</a>
+</section>
+
+
+
+<!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<footer  id="footer" class="flex gap-7 flex-col w-full mt-10 relative bg-footer" >
+    <div class="absolute right-1/2 rounded-full w-10 h-10 flex items-center justify-center bg-secondary animate-bounce hover:cursor-pointer" onclick="scrollToElement('home-section')"><span class="text-center text-white font-light text-3xl">&#8593</span></div>
+    <div class="w-full h-0.5 bg-white"></div>
+  
+        <div
+            class="flex justify-start ml-5">
+            <img src="./assets/logo (2).png" alt="logo">
+          
+        </div>
+  
+    <div class="flex justify-evenly flex-wrap gap-2">
+        <div class="flex flex-col gap-1">
+            <p class="text-white text-lg font-medium uppercase underline">NOS AGENCES</p>
+            <p class="text-white text-lg font-normal">DevOp360</p>
+            <p class="text-white text-lg font-normal">ProlabAfrik-Benin</p>
+        </div>
+  
+        <div class="flex flex-col gap-1">
+            <p class="text-white text-lg font-medium uppercase underline">Contact</p>
+            <p class="text-white text-lg font-normal">+229 64 25 95 31</p>
+            <p class="text-white text-lg font-normal">+33 6 81 68 09 13</p>
+            <p class="text-white text-lg font-normal">contact@prolabafrik.com</p>
+        </div>
+        <div class="flex flex-col gap-3 text-white">
+          <p class="text-white text-lg font-medium uppercase underline">Réseaux sociaux</p>
+          <div class="flex flex-row gap-3">
+              <a href="#" aria-label="YouTube">
+                  <i class="fab fa-youtube" style="color: white; font-size: 24px;"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                  <i class="fab fa-twitter" style="color: white; font-size: 24px;"></i>
+              </a>
+              <a href="#" aria-label="TikTok">
+                  <i class="fab fa-tiktok" style="color: white; font-size: 24px;"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                  <i class="fab fa-facebook" style="color: white; font-size: 24px;"></i>
+              </a>
+      </div>
+        </div>
+    </div>  
+    <p class="text-white text-lg font-bold text-center">© 2024 ProLabAfrik</p>
+  </footer>
+
+
+</body>
+</html>

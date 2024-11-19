@@ -1,0 +1,171 @@
+.navcard {
+    display: flex;
+    position: relative;
+    width: 90%; /* Largeur ajustée pour la responsivité */
+    max-width: 1300px;
+    height: 700px;
+    background: transparent;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;/* Épaisseur du texte */
+    border-top-left-radius:25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .navcard .boutton{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    border-bottom-left-radius: 25px;
+  }
+  
+  .navcard .boutton2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    border-top-right-radius:25px;
+  }
+  
+  .navcard .boutton::before{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 10px -10px 0 rgb(255, 255, 255);
+  }
+  .navcard .boutton::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 10px -10px 0 rgb(255, 255, 255);
+  }
+  
+  .navcard .boutton2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 rgb(255, 255, 255);
+  }
+  .navcard .boutton2::after{
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 rgb(255, 255, 255);
+  }
+  
+  .titre1 {
+    position: absolute; /* Permet de contrôler précisément la position */
+    top: 50%; /* Aligne verticalement au centre de l'écran */
+    left: 0; /* Positionne l'élément au bord gauche */
+    transform: translateY(-50%); /* Centre verticalement par rapport à `top: 50%` */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Met le texte en gras */
+    text-align: left; /* Aligne le texte à gauche */
+    padding: 20px; /* Ajoute de l'espace autour du texte */
+    line-height: 1.5; /* Espacement des lignes pour lisibilité */
+    font-size: 2rem; /* Taille de la police */
+  }
+  
+  @media (max-width: 978px) {
+    .header {
+        display: flex; /* Active le mode flexbox */
+        flex-direction: column; /* Dispose les éléments en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        justify-content: center; /* Centre les éléments verticalement */
+        text-align: center; /* Centre le texte à l'intérieur des éléments */
+
+        gap: 1rem; /* Optionnel : espace uniforme entre les éléments */
+      }
+      
+  
+    .header .titre {
+      margin-top: 200px;
+      margin-bottom: 0; /* Ajoute un espace entre le texte et les autres éléments */
+      width: 100%; /* Occupe toute la largeur */
+    }
+    .titre .TextIII{
+        display: none;
+    }
+  
+    .header .flex {
+      flex-direction: column; /* Assure que les enfants restent alignés en colonne */
+    }
+  
+    .header .mt-40-important {
+      margin-top: 0 !important; /* Supprime l'espacement supplémentaire */
+    }
+    .navcard {
+        display: flex;
+        position: relative;
+        width: 90%; /* Largeur ajustée pour la responsivité */
+        max-width: 703px;
+        height: 451px;
+        background: transparent;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+        transform: rotate(360deg);
+        transition: transform 1s ease-in-out;/* Épaisseur du texte */
+        border-top-left-radius:25px;
+        border-bottom-right-radius: 25px;
+        margin-top: -100px;
+      }
+      
+      .navcard .boutton{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100px;
+        height: 50px;
+        background: #ffffff;
+        border-bottom-left-radius: 25px;
+      }
+      
+      .navcard .boutton2{
+        display: none;
+      }
+      .header .Logo {
+        display: flex;
+        flex-direction: row; /* Conserve l'organisation en ligne si nécessaire */
+        position: absolute;
+        top: 600px;
+        left: 50%; /* Place horizontalement à 50% */
+        transform: translateX(-50%); /* Ajuste pour centrer parfaitement */
+        justify-content: center; /* Centre les enfants horizontalement dans .Logo */
+        align-items: center; /* Centre les enfants verticalement si applicable */
+      }
+      
+      .titre .spanB{
+        display: none;
+      }
+
+
+  }
+  

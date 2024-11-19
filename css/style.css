@@ -1,0 +1,897 @@
+*{
+  
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.card {
+  display: flex;
+  position: relative;
+  width: 90%; /* Largeur ajustée pour la responsivité */
+  max-width: 1400px;
+  height: 400px;
+  background: transparent;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 5%;
+  overflow: hidden;
+  transform: rotate(360deg);
+  
+}
+
+.card .imgBx {
+  width: 38%; /* Largeur en pourcentage pour une meilleure responsivité */
+  height: 100%;
+  background: #ffffff;
+  border-radius: 40px;
+  transform: rotate(360deg);
+  background-image: url(b86afb5ce7b81165c8ed478fc78643e9.png);
+  background-size: cover;
+  border: 3px solid #CF2B5B;
+}
+
+.card .content {
+  width: 60%; /* Largeur en pourcentage pour une meilleure responsivité */
+  height: 100%;
+  background: linear-gradient(rgba(181, 38, 80, 1)20%, rgba(14, 26, 124, 1));
+  background-size: cover;
+  border-radius: 40px;
+  border: 3px solid #CF2B5B;
+  transform: rotate(360deg);
+
+  border-top-right-radius: 0px;
+}
+
+.card .content .price {
+  position: absolute;
+  top: -3px;
+  right: -80px;
+  height: 35%;
+  width: 80px;
+  background: linear-gradient(rgba(181, 38, 80, 1) 60%, rgba(144, 35, 90, 1));
+  background-size: cover;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  border-top: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+  border-bottom: 3px solid #CF2B5B;
+}
+
+.card .imgBx .price {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 80px;
+  height: 45%;
+  background: #ffffff;
+  border-bottom-right-radius: 40px;
+  border-bottom: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+}
+
+.card .imgBx .price2 {
+  position: absolute;
+  bottom: 5px;
+  left: -3px;
+  width: 30px;
+  height: 223.5px;
+  background: transparent;
+  border-top-left-radius: 0px;
+  border-top: 3px solid #CF2B5B;
+}
+
+.card .imgBx .price::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px -10px 0 rgb(255, 255, 255);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top: 3px solid #CF2B5B;
+  border-left: 3px solid #CF2B5B;
+}
+
+.card .imgBx .price::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card .imgBx .price2::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.card .imgBx .price2::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top: 3px solid #CF2B5B;
+  border-left: 3px solid #CF2B5B;
+  box-shadow: -10px -10px 0 #ffffff;
+}
+
+.card .content .price::before {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px -10px 0 rgba(144, 35, 90, 1);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top: 3px solid #CF2B5B;
+  border-left: 3px solid #CF2B5B;
+}
+
+.card .content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 240px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+
+
+
+/*deuxieme part*/
+
+.card2 {
+  display: flex;
+  position: relative;
+  width: 90%; /* Largeur ajustée pour la responsivité */
+  max-width: 1400px;
+  height: 400px;
+  background: transparent;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+  overflow: hidden;
+  transform: rotate(360deg);
+
+}
+
+.card2 .imgBx {
+  width: 38%; /* Largeur en pourcentage pour une meilleure responsivité */
+  height: 100%;
+  background: #151A45;
+  border-radius: 40px;
+  transform: rotate(360deg);
+  
+  border-top-right-radius: 0px;
+  background-size: cover;
+  border: 3px solid #CF2B5B;
+  border-left: 3px solid #CF2B5B;
+  
+}
+
+.card2 .content {
+  width: 60%; /* Largeur en pourcentage pour une meilleure responsivité */
+  height: 100%;
+  background: linear-gradient(rgba(14, 26, 124, 1), rgba(181, 38, 80, 1)85%);
+  background-size: cover;
+  border-radius: 40px;
+  border: 3px solid #CF2B5B;
+  transform: rotate(360deg);
+  border-bottom-left-radius: 0px;
+}
+
+.card2 .content .price{
+  position: absolute;
+  bottom: -3px;
+  left: -80px;
+  height: 35%;
+  width: 80px;
+  background: linear-gradient(rgba(144, 35, 90, 1),rgba(181, 38, 80, 1) 60% );
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom: 3px solid #CF2B5B;
+  border-left: 3px solid #CF2B5B;
+  border-top: 3px solid #CF2B5B;
+}
+
+.card2 .imgBx .price {
+  position: absolute;
+  bottom:-3px;
+  right: -3px;
+  width: 80px;
+  height: 45%;
+  background: #ffffff;
+  border-top-left-radius: 40px;
+  border-top: 3px solid#CF2B5B;
+  border-left: 3px solid#CF2B5B;
+}
+
+.card2 .imgBx .price2 {
+  position: absolute;
+  top: 5px;
+  right:-3px;
+  width: 30px;
+  height: 223.5px;
+  background: transparent;
+  border-top-right-radius: 0px;
+  
+}
+.card2 .imgBx .price::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: -10px -10px 0 transparent;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top: 3px solid #CF2B5B;
+  border-left: 3px solid #CF2B5B;
+}
+
+.card2 .imgBx .price2::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.card2 .imgBx .price2::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  right: -0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+  box-shadow: 10px 10px 0 #ffffff;
+}
+
+.card2 .content .price::before{
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0 rgba(144, 35, 90, 1);
+  border-TOP-right-radius: 0;
+  border-BOTTOM-left-radius: 0;
+  border-bottom: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+ 
+}
+
+.card2 .imgBx::after{
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0 #ffffff;
+  border-top: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+  border-TOP-left-radius: 0;
+  border-BOTTOM-right-radius: 0;
+}
+.card2 .imgBx::before{
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0 #ffffff;
+  border-top: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+  border-TOP-left-radius: 0;
+  border-BOTTOM-right-radius: 0;
+}
+.card2 .imgBx .price::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: -80px;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  border-top-RIGHT-radius: 0;
+  border-bottom-LEFT-radius: 0;  
+  border-bottom: 3px solid #CF2B5B;
+  border-right: 3px solid #CF2B5B;
+  box-shadow: 10px 10px 0 #ffffff;
+}
+.card2 .imgBx .price3{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 70px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+
+  box-shadow: 10px 10px 0 #ffffff;
+}
+
+
+@media (min-width: 768px) {
+  .Mobile {
+    display: none;
+
+  }
+
+  }
+
+/* Masquer les éléments non essentiels sur les petits écrans */
+@media (max-width: 1400px) {
+  .card1 {
+    display: flex;
+    position: relative;
+    width: 90%; /* Largeur ajustée pour la responsivité */
+    max-width: 398px;
+    height: 450px;
+    background: linear-gradient(rgba(207, 43, 91, 1), rgba(14, 26, 124, 1));
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+    transform: rotate(360deg);
+    margin-top: 5%;
+    border-radius: 40px;
+    border: 3px solid #CF2B5B;
+    box-shadow: 10px  10px 0 gray;
+}
+.imgText{
+  display: flex;
+  position: relative;
+  width: 90%; /* Largeur ajustée pour la responsivité */
+  max-width: 398px;
+  height: 376px;
+  flex-direction: row-reverse;
+  border: 3px solid #CF2B5B;
+  border-radius: 40px;
+}
+  
+
+@media (max-width: 768px) {
+  .container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      width: 90%; /* Largeur ajustée pour la responsivité */
+      max-width: 350px;
+      height: 750px;
+      position: relative;
+      margin-top: 10px;
+  }
+  
+  .container .upper {
+      background: linear-gradient(rgba(207, 43, 91, 1), rgba(14, 26, 124, 1));
+      width: 100%;
+      height: 40%;
+      border-radius: 40px;
+      position: relative;
+      border: 3px solid #CF2B5B;
+  }
+  
+  .container .upper::before {
+      content: "";
+      position: absolute;
+      top: 150px;
+      left: -3px;
+      width: 80px;
+      height: 80px;
+      background-color:transparent;
+      box-shadow: -20px 6px 0 0px rgb(255, 255, 255);
+      border-radius: 50%;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-left: solid 3px #CF2B5B;
+      border-bottom: solid 3px #CF2B5B;
+      z-index: 1;
+
+  }
+  
+  .container .upper::after {
+    content: "";
+    position: absolute;
+    left: 156.5px;
+    bottom: -3px;
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    box-shadow: -5px 10px 0 0px #ffffff;
+    border-radius: 0% 40px 0 40px; /* Applique un arrondi sauf en bas à droite */
+    border-left: solid 3px #CF2B5B;
+      border-bottom: solid 3px #CF2B5B;
+      z-index: 1;
+  }
+  
+  .container .lower {
+      background: linear-gradient(rgba(181, 38, 80, 1),rgba(14, 26, 124, 1));
+      width: 100%;
+      height: 40%;
+      border-radius: 0 40px 40px;
+      position: relative;
+  }
+  
+  .container .lower::before {
+      content: "";
+      position: absolute;
+      top: -69px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background-color: transparent;
+      box-shadow: -50px -8px 0 0px rgb(255, 255, 255);
+      border-radius: 50%;
+      z-index: 1;
+      border-top-LEFT-radius: 40px;
+      border-top-RIGHT-radius: 0px;
+      border-bottom-LEFT-radius: 0px;
+  }
+  
+  .container .lower::after {
+    content: "";
+    position: absolute;
+    left: 149px;
+    top: -60px;
+    width: 80px;
+    height: 60px;
+    background-color: transparent;
+    box-shadow: -6px 20px 0 0px rgba(181, 38, 80, 1);
+    border-radius: 0% 40PX 0 40px; /* Arrondi sauf en bas à droite */
+    z-index: 1;
+    
+  }
+  
+  .container .lower .price2 {
+      background: rgba(181, 38, 80, 1);
+      position: absolute;
+      top: -80px;
+      height: 80px;
+      width: 160px;
+      border-top: 11px solid #ffffff;
+      border-right: 11px solid #fff;
+      border-top-right-radius: 40px;
+      border-top-LEFT-radius: 40px;
+  }
+  .container .lower .price3 {
+    background: transparent;
+    position: absolute;
+    top: -11px;
+    left: 2.5px;
+    height: 40px;
+    width: 160px;
+    border-top: 3px solid #CF2B5B;
+    border-right: 3px solid #CF2B5B;
+    border-top-right-radius: 40px;
+}
+
+
+  .card, .card2 {
+      display: none;
+    }
+  
+    .card .imgBx, .card .content, .card2 .imgBx, .card2 .content {
+      
+      display: none;
+    }
+  
+    /* Masquer les éléments additionnels pour les petits écrans */
+    .card .price, .card .price2, .card .price3,
+    .card2 .price, .card2 .price2, .card2 .price3 {
+      display: none;
+    }
+  
+    /* Ajustement pour l'image */
+    .card .imgBx, .card2 .imgBx {
+      display: none;
+    }
+    .card, .card2 {
+      display: none;
+      flex-direction: column;
+      row-gap: 10px;
+      max-width: 350px;
+      height: 450px;
+      position: relative;
+    }
+  
+    .card .imgBx, .card .content, .card2 .imgBx, .card2 .content {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px;
+      transform: none;
+    }
+  
+    /* Masquer les éléments additionnels pour la responsivité */
+    .card .price, .card .price2, .card .price3,
+    .card2 .price, .card2 .price2, .card2 .price3 {
+      display: none;
+    }
+  }
+}
+
+
+
+.navcard {
+  display: flex;
+  position: relative;
+  width: 90%; /* Largeur ajustée pour la responsivité */
+  max-width: 1300px;
+  height: 700px;
+  background: transparent;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  overflow: hidden;
+  transform: rotate(360deg);
+  transition: transform 1s ease-in-out;/* Épaisseur du texte */
+  border-top-left-radius:25px;
+  border-bottom-right-radius: 25px;
+}
+
+.navcard .boutton{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 50px;
+  background: #ffffff;
+  border-bottom-left-radius: 25px;
+}
+
+.navcard .boutton2{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 200px;
+  height: 50px;
+  background: #ffffff;
+  border-top-right-radius:25px;
+}
+
+.navcard .boutton::before{
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0 rgb(255, 255, 255);
+}
+.navcard .boutton::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0 rgb(255, 255, 255);
+}
+
+.navcard .boutton2::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 rgb(255, 255, 255);
+}
+.navcard .boutton2::after{
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 rgb(255, 255, 255);
+}
+
+.titre1 {
+  position: absolute; /* Permet de contrôler précisément la position */
+  top: 50%; /* Aligne verticalement au centre de l'écran */
+  left: 0; /* Positionne l'élément au bord gauche */
+  transform: translateY(-50%); /* Centre verticalement par rapport à `top: 50%` */
+  color: white; /* Couleur du texte */
+  font-weight: bold; /* Met le texte en gras */
+  text-align: left; /* Aligne le texte à gauche */
+  padding: 20px; /* Ajoute de l'espace autour du texte */
+  line-height: 1.5; /* Espacement des lignes pour lisibilité */
+  font-size: 2rem; /* Taille de la police */
+}
+
+
+@media (max-width: 978px) {
+  .header {
+      display: flex; /* Active le mode flexbox */
+      flex-direction: column; /* Dispose les éléments en colonne */
+      align-items: center; /* Centre les éléments horizontalement */
+      justify-content: center; /* Centre les éléments verticalement */
+      text-align: center; /* Centre le texte à l'intérieur des éléments */
+
+      gap: 1rem; /* Optionnel : espace uniforme entre les éléments */
+    }
+    
+
+  .header .titre {
+    margin-top: 100px;
+    margin-bottom: 0; /* Ajoute un espace entre le texte et les autres éléments */
+    width: 100%; /* Occupe toute la largeur */
+  }
+  .titre .TextIII{
+      display: none;
+  }
+
+  .header .flex {
+    flex-direction: column; /* Assure que les enfants restent alignés en colonne */
+  }
+
+  .header .mt-40-important {
+    margin-top: 0 !important; /* Supprime l'espacement supplémentaire */
+  }
+  .navcard {
+      display: flex;
+      
+      position: relative;
+      width: 90%; /* Largeur ajustée pour la responsivité */
+      max-width: 703px;
+      height: 451px;
+      background: transparent;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      overflow: hidden;
+      transform: rotate(360deg);
+      transition: transform 1s ease-in-out;/* Épaisseur du texte */
+      border-top-left-radius:25px;
+      border-bottom-right-radius: 25px;
+      margin-top: 100px;
+    }
+    
+    .navcard .boutton{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100px;
+      height: 50px;
+      background: #ffffff;
+      border-bottom-left-radius: 25px;
+    }
+    .navcard .boutton .contact{
+      display: none;
+    }
+    .navcard .burger{
+      display: flex;
+      position: absolute;
+      right: 30px;
+      top: 5px;
+      background: #CF2B5B;
+      padding: 3px;
+      border-radius: 15px;
+    }
+    
+    .navcard .boutton2{
+      display: none;
+    }
+    .header .Logo {
+      display: flex;
+      flex-direction: row; /* Conserve l'organisation en ligne si nécessaire */
+      position: absolute;
+      top: 500px;
+      left: 50%; /* Place horizontalement à 50% */
+      transform: translateX(-50%); /* Ajuste pour centrer parfaitement */
+      justify-content: center; /* Centre les enfants horizontalement dans .Logo */
+      align-items: center; /* Centre les enfants verticalement si applicable */
+    }
+    
+    .titre .spanB{
+      display: none;
+    }
+
+
+}
+.BoxX{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+  margin-bottom: -350px;
+
+}
+.Footer{
+  height: 500px;
+}
+.Box .box1 {
+  display: flex;
+  position: absolute;
+  top: -160px;
+  left: -250px;
+  width: 434.5px;
+  height: 275.5px;
+  background-position: center;
+}
+
+.Box .box2 {
+  display: flex;
+  position: absolute;
+  top: -160px;
+  right: -250px;
+  width: 398px;
+  height: 289px;
+  background-position: center;
+}
+
+.Box .box3 {
+  display: flex;
+  position: absolute;
+  bottom: -160px;
+  right: -250px;
+  width: 276px;
+  height: 322.5px;
+  background-position: center;
+}
+
+.Box .box4 {
+  display: flex;
+  position: absolute;
+  bottom: -160px;
+  left: -275px;
+  width: 348.5px;
+  height: 386px;
+  background-position: center;
+}
+
+.Textcard{
+  padding-bottom: 15px;
+}
+.Textcard .Phrase{
+  text-align: justify;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.Textcard .Phrase2 {
+  text-align: justify right; /* Aligne le texte à droite */
+  direction: rtl;    /* Définit le sens du texte de droite à gauche */
+  padding-right: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.Textcard .Phrase3 {
+  text-align: justify right; /* Aligne le texte à droite */
+  direction: rtl;    /* Définit le sens du texte de droite à gauche */
+  padding-right: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.Textcard .Phrase4 {
+  text-align: justify right; /* Aligne le texte à droite */
+  direction: ltr;    /* Définit le sens du texte de droite à gauche */
+  padding-right: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+footer{
+  bottom: 0;
+}
+
+@media (max-width: 1400px) {
+  .BoxX {
+    display: none;
+  }
+  .Box  {
+   display: flex;
+  }
+  .Mobile1 .card {
+    display: flex;
+    position: relative;
+    width: 90%; /* Largeur ajustée pour la responsivité */
+    max-width: 500px;
+    height: 250px;
+    background: linear-gradient(rgba(207, 43, 91, 1), rgba(14, 26, 124, 1));
+    flex-direction: column;
+    margin-top: 5%;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 10px 10px 0 rgb(201, 199, 199);
+    border: 3px solid #CF2B5B;
+  }
+}
+.Mobile{
+  margin-top: -200px;
+}
+@media (max-width: 1050px) {
+  .Mobile{
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1400px) {
+  .Mobile1{
+    display: none;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); } /* Début et fin à la position d'origine */
+  50% { transform: translateY(-10px); } /* Déplacement vers le haut */
+}
+
+/* Appliquer l'animation de flottement à chaque box */
+.box1, .box2, .box3, .box4 {
+  animation: float 3s ease-in-out infinite; /* Animation de 3s en boucle */
+}
+
+@media (max-width:566px) {
+  .titre1 .h2{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .titre1 .P{
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
